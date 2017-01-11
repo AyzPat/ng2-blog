@@ -1,0 +1,146 @@
+
+<div  class="panel panel-default" style="margin-bottom: 0px;background-color: aliceblue;">
+    
+    <div class="panel-heading" >
+     
+    
+   
+<h1 class="my-header" align="center" style="    font-family: serif;
+    font-weight: bold;"> T.I.G.E.R BLOG</h1>
+  
+    </div>
+   
+     
+<div class="row" >
+ 
+     <div class="col-sm-9 col-md-6 col-lg-8">
+        
+          <div class="panel-body">
+              
+         <div *ngFor="let Users of Users | paginate: { itemsPerPage: 5, currentPage: p }" >
+              
+           <i>
+            <div class="col-sm-3 col-md-2 col-lg-2" class="numberCircle">{{Users.Date|date: 'MMM d'|uppercase}} 
+                
+            </div>    
+           
+        </i>
+          <div class="col-sm-9 col-md-6 col-lg-10">
+
+            <h4  class="my">{{Users.title|uppercase}}</h4>
+          
+           
+           <br/>
+           <div class="sub"> Posted by {{Users.name}} on {{Users.Date|date:'yMMMdjms'}}
+               <span class="glyphicon glyphicon-comment"></span>
+               {{Users.count}} Comments
+                </div>
+          </div>
+          <br/>
+          
+     
+ <div  class="col-sm-9 col-md-6 col-lg-6" >
+         <img class="img" src="{{Users.url}}" class="img-rounded" style="  display: inline-block;
+    vertical-align: middle  width: 50%;
+    height: 50%;
+   ">
+       </div>
+
+      <br>
+     
+      <div class="col-sm-9 col-md-6 col-lg-6"> 
+     <p align="justify" style="font-size:16px">
+     {{data|ellipsis:200}}   
+     </p>
+</div>
+     <br>
+
+     <div>
+      <button class="my-button" type="submit" name="View">View Full Post</button>
+       
+     
+
+     </div>
+  <hr>
+         </div>
+         
+     </div>
+     
+   </div>
+  
+  
+    <div class="col-sm-3 col-md-6 col-lg-4" >
+     <!--<input class="my-search" type="text" name="search" placeholder="Search..">-->
+
+      <div class="col-sm-9 col-md-6 col-lg-12" class="input-group add-on" style=" margin-top: 26px;width: 200px;">
+      <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+    <div class="col-sm-9 col-md-6 col-lg-12" class="category">
+       <h3>Categories</h3>
+   <ul >
+         
+         <li class="list">
+          <button type="button" class="btn btn-link" >Community</button>   
+             
+         </li>
+         <li class="list">
+            <button type="button" class="btn btn-link"> Editorial</button>
+           
+         </li>
+         <li class="list">
+             <button type="button" class="btn btn-link">Technical</button>
+             
+         </li>
+         <li class="list">
+             <button type="button" class="btn btn-link">Customer Spotlight </button>
+        </li>
+     </ul>
+
+    </div>
+
+
+
+     <!--<button class="btn btn-info" class="category"   (click)="isVisible = !isVisible">CATEGORIES</button>
+   <my-fader [isVisible]="isVisible">
+       <ul >
+         
+         <li class="list">
+          <button type="button" class="btn btn-link" >Community</button>   
+             
+         </li>
+         <li class="list">
+            <button type="button" class="btn btn-link"> Editorial</button>
+           
+         </li>
+         <li class="list">
+             <button type="button" class="btn btn-link">Technical</button>
+             
+         </li>
+         <li class="list">
+             <button type="button" class="btn btn-link">Customer Spotlight </button>
+        </li>
+     </ul>
+    </my-fader>
+    -->
+    
+  
+    
+    
+
+
+
+    </div>
+</div>
+    
+     
+
+ <pagination-controls   (pageChange)="p = $event"></pagination-controls>
+</div>

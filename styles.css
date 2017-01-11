@@ -1,0 +1,202 @@
+.html{
+    background-color: lightskyblue;
+}
+
+footer { 
+    display: block;
+}
+
+.my-search {
+   width: 110px;
+       height: 0px;
+   margin-top: 32px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: lightgray;
+       
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 5px;
+    /*-webkit-transition: width 0.4s ease-in-out;*/
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 100%;
+}
+
+.numberCircle {
+    border-radius: 50%;
+        margin-left: 10;
+    margin-top: 10px;
+
+
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    
+    background:gold;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    
+    font: 17px Arial, sans-serif;
+}
+
+
+.my {
+    font-family: Arial;
+    font-weight: bold;
+    margin-top: -51px;
+    margin-bottom: 10px;
+    margin-left: 87px;
+    font-style: normal;
+}
+
+.sub{
+    margin-top: -17px;
+   margin-left: 87px;
+    
+    font-size: small;
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    
+    background-color: #fff;
+    margin-left: 50px;
+}
+
+
+.text-area{
+    /*margin-left: 164px;*/
+    margin-top: 200px;
+   
+  
+            
+        overflow: hidden;
+
+   display: -webkit-box;
+        text-overflow: ellipsis; 
+  
+  -webkit-box-orient: vertical;
+   margin-left: 50px;
+   margin-right:50px;
+
+  
+   -webkit-line-clamp: 5; /* number of lines to show */
+  
+}
+
+
+
+.my-button {
+        
+    background-color: #286090;
+    border-color: #204d74;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color:white;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+  
+    line-height: 1.3em;
+    width: 111px;
+    margin-left: 649px;
+}
+
+
+
+
+.vertical-line
+ 
+{
+    height: 2540px;
+width: 1px; /* Line width */ 
+background-color: black; /* Line color */ 
+height: 100%; /* Override in-line if you want specific height. */ 
+float: right; /* Causes the line to float to left of content. You can instead use position:absolute or display:inline-block if this fits better with your design */
+ 
+}
+
+/**/
+
+.row.vertical-divider {
+  overflow: hidden;
+}
+.row.vertical-divider > div[class^="col-"] {
+  text-align: center;
+  padding-bottom: 100px;
+  margin-bottom: -100px;
+ 
+}
+.row.vertical-divider div[class^="col-"]:first-child {
+  border-right:1px solid grey;;
+}
+.row.vertical-divider div[class^="col-"]:last-child {
+  border-right: 1px solid grey;;
+}
+
+body,html
+
+{
+ margin-left: 0;
+    margin-right: -14px;
+    
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    overflow-x: hidden;
+}
+
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 40;
+    line-height: 1.45;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+li.list{
+        font-size: 20px;
+}
+
+.btn-link {
+    font-size: 20px;
+}
+
+.category{
+   
+    margin-top: -27px;
+    font-weight: 500;
+  
+    
+      
+   
+}
+
